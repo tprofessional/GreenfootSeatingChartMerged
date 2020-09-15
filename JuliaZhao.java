@@ -20,11 +20,12 @@ public class JuliaZhao extends Student implements StudentAthlete
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public JuliaZhao(String f, String l, int r, int s) {
+    public JuliaZhao(String f, String l, int r, int s, int p) {
         firstName = f;
         lastName = l;
         myRow = r;
         mySeat = s;
+        myPeriod = p;
         portraitFile = f.toLowerCase() + l.toLowerCase() +".jpg";
         standingFile = firstName.toLowerCase() + lastName.toLowerCase() +"-standing.jpg";
         soundFile = f.toLowerCase() + l.toLowerCase() +".wav";
@@ -41,7 +42,8 @@ public class JuliaZhao extends Student implements StudentAthlete
         firstName = "Julia";
         lastName = "Zhao";
         myRow = 1;
-        mySeat = 3;
+        mySeat = 2;
+        myPeriod = 3;
         // imgFile=firstName.toLowerCase() + lastName.toLowerCase() +".jpg";
         portraitFile = "juliazhao.jpg";        
         standingFile = "juliazhao-standing.jpg";

@@ -23,11 +23,12 @@ public class TrishaMoorkoth extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public TrishaMoorkoth(String f, String l, int r, int s) {
+    public TrishaMoorkoth(String f, String l, int r, int s, int p) {
         firstName=f;
         lastName=l;
         myRow=r;
         mySeat=s;
+        myPeriod = p;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -42,8 +43,9 @@ public class TrishaMoorkoth extends Student implements SpecialInterestOrHobby
     public TrishaMoorkoth() {
        firstName="Trisha";
        lastName="Moorkoth";
-       myRow=6;
-       mySeat=2;
+       myRow=1;
+       mySeat=1;
+       myPeriod=2;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";

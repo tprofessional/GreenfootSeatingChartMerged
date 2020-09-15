@@ -24,7 +24,7 @@ public abstract class Student extends Actor
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)\
    Classroom clas = (Classroom) getWorld();
 
-   protected int period;
+   //protected int period;
    public void setRow(int r){
        myRow=r;
     }
