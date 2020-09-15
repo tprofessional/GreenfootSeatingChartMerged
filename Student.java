@@ -14,7 +14,7 @@ public abstract class Student extends Actor
    public int myRow;         // rows start in the front of class (1), and end in the back of class
    public int mySeat;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
-                             // variable to use keyboard entry for all the instance of a student
+   public int myPeriod;             // variable to setPeriod
                              // that we will create?
    public boolean sitting;   // Is the student sitting or standing (default sitting)                
    
@@ -29,9 +29,13 @@ public abstract class Student extends Actor
        myRow=r;
     }
     
-    public void setSeat(int s){
-       mySeat=s;
-    }
+   public void setSeat(int s){
+      mySeat=s;
+   }
+    
+   public void setPeriod (int p) {
+       myPeriod = p;
+   }
     
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
                                      // in your own class file. See KilgoreTrout for an example
