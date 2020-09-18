@@ -3,8 +3,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Student here.
  * 
- * @author  
- * @version 
+ * @Trisha Moorkoth 
+ * @1.0
  */
 public abstract class Student extends Actor
 {
