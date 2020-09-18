@@ -41,7 +41,7 @@ public abstract class Student extends Actor
                                      // in your own class file. See KilgoreTrout for an example
     public abstract void  provideLesson(); // each group should implement their own version of this method.
                                            // See the notes in the assignment instructions for possible implementation.
-     public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
+    public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
                                             // in your own class file.  It was used in 2019-20 so that students could
                                             // implement methods that would discuss the summer homework lessons.  This year
                                             // you will work in teams of 3 to figure out some way to actually give a short

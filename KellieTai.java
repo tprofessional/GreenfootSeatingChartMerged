@@ -22,11 +22,12 @@ public class KellieTai extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public KellieTai(String f, String l, int r, int s) {
+    public KellieTai(String f, String l, int r, int s, int p) {
         firstName=f;
         lastName=l;
         myRow=1;
-        mySeat=4;
+        mySeat=3;
+        myPeriod = 3;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!

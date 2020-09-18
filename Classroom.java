@@ -13,7 +13,8 @@ import java.lang.reflect.Constructor;
  */
 public class Classroom extends World
 {
-    private ArrayList<Object> listo = new ArrayList<Object>();
+    //make an arraylist of all students
+    public ArrayList<Student> studentList = new ArrayList<Student>(getObjects(Student.class));
     /**
      * Constructor for objects of class Classroom.
      *
@@ -25,7 +26,11 @@ public class Classroom extends World
 
         prepare();
     }
-
+    
+    //create a public method to return the list of students
+    public ArrayList<Student> getStudents() {
+        return studentList;
+    }
     /**
      * Prepare the world for the start of the program. That is: create the initial
      * objects and add them to the world.
@@ -61,10 +66,14 @@ public class Classroom extends World
         addObject(juliazhao, 1, 2);
         juliazhao.sitDown();
         
-        KellieTai kellietai = new KellieTai("Kellie", "Tai", 1, 4);
-        addObject(kellietai, 1, 4);
+        KellieTai kellietai = new KellieTai("Kellie", "Tai", 1, 3, 3);
+        addObject(kellietai, 1, 3);
         kellietai.sitDown();
-
+        
+        TogglePerButton button = new TogglePerButton();
+        addObject (button, 6, 3);
+        
+        
     }
 }
 
