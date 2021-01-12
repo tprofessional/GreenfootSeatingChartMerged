@@ -7,6 +7,7 @@ import bluej.*;
  * @author Trisha Moorkoth
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
+ * @version 4.0 Sept 15, 2020
  */
 public class TrishaMoorkoth extends Student implements SpecialInterestOrHobby
 {
